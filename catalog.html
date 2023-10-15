@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231015181615">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header_second">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/logo.png" alt=""></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="about-us.html" class="menu__link ">about us</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link active">catalog</a></li>
+							<li class="menu__item"><a href="" class="menu__link">contacts</a></li>
+						</ul>
+						<div class="menu__input-search search-block">
+							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Find your car..." class="menu__input search-block__input input">
+							<button type="button" class="search-block__button _icon-search"></button>
+						</div>
+						<button data-popup="#contact" type="button" class="menu__popup-contact">contact us</button>
+						<div class="menu__contacts contacts">
+							<a href="" class="contacts__link _icon-whatsapp">
+								<span></span>
+							</a>
+							<a href="" class="contacts__link _icon-tg">
+								<span></span>
+							</a>
+							<a href="" class="contacts__link _icon-call">
+								<span></span>
+							</a>
+						</div>
+
+					</nav>
+					<a href="#" type="button" class="menu__user-area _icon-user"></a>
+					<select name="form[]" data-class-modif="lang">
+						<option value="1" selected>en</option>
+						<option value="2">ru</option>
+					</select>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__car-brands car-brands">
+				<div class="car-brands__container">
+					<div class="car-brands__items">
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/0.jpg" class="car-brands__image" alt="image">
+							<span class="car-brands__name">Arcfox</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/1.jpg" class="car-brands__image" alt="image">
+							<span class="car-brands__name">Audi</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/2.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">BMW</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/3.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">BYD</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/4.jpg" class="car-brands__image" alt="image">
+							<span class="car-brands__name">FORD</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/5.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">GEELY</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/6.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">HiPhi</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/7.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">HongQi</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/8.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">Huawei</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/9.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">Li Auto</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/10.jpg" class="car-brands__image" alt="image">
+							<span class="car-brands__name">NIO</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/11.jpg" class="car-brands__image" alt="image">
+							<span class="car-brands__name">Polestar</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/12.jpg" class="car-brands__image" alt="image">
+							<span class="car-brands__name">Porsche</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/13.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">Tesla</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/14.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">Volkswagen</span>
+						</a>
+						<a href="#" class="car-brands__item">
+							<img src="img/car-brands-images/15.png" class="car-brands__image" alt="image">
+							<span class="car-brands__name">XPENG</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<section class="page__catalog catalog">
+				<div class="catalog__container">
+					<h4 class="catalog__title">Catalog</h4>
+					<button type="button" class="catalog__open-filter button button-green">Filter</button>
+					<form class="catalog__body" action="#">
+						<aside class="catalog__filter filter">
+							<button type="button" class="filter__close">
+								<img src="img/popup-close.svg" alt="close">
+							</button>
+							<div class="filter__brand brand-filter">
+								<h3 class="brand-filter__title">brand</h3>
+								<select name="form[]" data-class-modif="brand">
+									<option value="1" selected>select...</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</div>
+							<div class="filter__type type-block">
+								<h3 class="type-block__title">body type</h3>
+								<div class="checkbox">
+									<input id="compartment" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="compartment" class="checkbox__label"><span class="checkbox__text">compartment</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="convertible" class="checkbox__input" type="checkbox" value="2" name="form[]">
+									<label for="convertible" class="checkbox__label"><span class="checkbox__text">convertible</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="hatchback" class="checkbox__input" type="checkbox" value="3" name="form[]">
+									<label for="hatchback" class="checkbox__label"><span class="checkbox__text">hatchback</span></label>
+								</div>
+								<button type="button" class="type-block__btn">More</button>
+							</div>
+							<div class="filter__drive drive-block">
+								<h3 class="drive-block__title">drive</h3>
+								<div class="checkbox">
+									<input id="rear" class="checkbox__input" type="checkbox" value="rear" name="form[]">
+									<label for="rear" class="checkbox__label"><span class="checkbox__text">rear</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="front" class="checkbox__input" type="checkbox" value="front" name="form[]">
+									<label for="front" class="checkbox__label"><span class="checkbox__text">front</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="all-wheels" class="checkbox__input" type="checkbox" value="all-wheels" name="form[]">
+									<label for="all-wheels" class="checkbox__label"><span class="checkbox__text">all wheels</span></label>
+								</div>
+							</div>
+							<div class="filter__power power">
+								<h3 class="battery__title">power</h3>
+								<div id="power" class="range"></div>
+								<div class="power__values">
+									<div class="power__value "><span id="power__value_1"></span>hp</div>
+									<div class="power__value "><span id="power__value_2"></span>hp</div>
+								</div>
+							</div>
+							<div class="filter__acceleration acceleration">
+								<h3 class="acceleration__title">acceleration 0-100</h3>
+								<div id="acceleration" class="range"></div>
+								<div class="acceleration__values">
+									<div class="acceleration__value "><span id="acceleration__value_1"></span>sec</div>
+									<div class="acceleration__value "><span id="acceleration__value_2"></span>sec</div>
+								</div>
+							</div>
+							<div class="filter__distance distance">
+								<h3 class="distance__title">distance</h3>
+								<div id="distance" class="range"></div>
+								<div class="distance__values">
+									<div class="distance__value "><span id="distance__value_1"></span>km</div>
+									<div class="distance__value "><span id="distance__value_2"></span>km</div>
+								</div>
+							</div>
+							<div class="filter__battery battery">
+								<h3 class="battery__title">battery capacity</h3>
+								<div id="battery" class="range"></div>
+								<div class="battery__values">
+									<div class="battery__value "><span id="battery__value_1"></span>kwh</div>
+									<div class="battery__value "><span id="battery__value_2"></span>kwh</div>
+								</div>
+							</div>
+							<button type="button" class="filter__apply button button-green">Apply filters</button>
+						</aside>
+						<div class="catalog__cards-block cards-block">
+							<h2 class="cards-block__title">Electric cars for sale</h2>
+							<div class="cards-block__descr">Our company offers a wide selection of electric car models for sale in the UAE. The given range of prices for ev cars will allow you to correctly estimate the budget and order your dream car online directly from China.</div>
+							<div class="cards-block__header">
+								<a href="#" class="cards-block__compare-list">COMPARE LIST</a>
+								<select name="form[]" data-class-modif="sort-car">
+									<option value="1" selected>sort by...</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</div>
+							<div class="cards-block__items">
+								<a href="#" class="cards-block__item item-card">
+									<div class="item-card__image-ibg">
+										<img src="img/car-images/01.jpg" alt="image">
+									</div>
+									<div class="item-card__brand"></div>
+									<div class="item-card__specifications">
+										<div class="item-card__specification _icon-car">engine: electric</div>
+										<div class="item-card__specification _icon-horse">power: 643hp</div>
+										<div class="item-card__specification _icon-light">battery cap.: 75kwh</div>
+										<div class="item-card__specification _icon-battary">distance: 500km</div>
+									</div>
+									<div class="item-card__price-block price-block">
+										<div class="price-block__number">40900$ - 47600$</div>
+										<div class="price-block__compare">
+											<img src="img/compare.svg" alt="compare-arrows">
+											compare
+										</div>
+									</div>
+									<button data-popup="#select-car" type="button" class="item-card__btn button button-green">select</button>
+								</a>
+								<a href="#" class="cards-block__item item-card">
+									<div class="item-card__image-ibg">
+										<img src="img/car-images/01.jpg" alt="image">
+									</div>
+									<div class="item-card__brand"></div>
+									<div class="item-card__specifications">
+										<div class="item-card__specification _icon-car">engine: electric</div>
+										<div class="item-card__specification _icon-horse">power: 643hp</div>
+										<div class="item-card__specification _icon-light">battery cap.: 75kwh</div>
+										<div class="item-card__specification _icon-battary">distance: 500km</div>
+									</div>
+									<div class="item-card__price-block price-block">
+										<div class="price-block__number">40900$ - 47600$</div>
+										<div class="price-block__compare">
+											<img src="img/compare.svg" alt="compare-arrows">
+											compare
+										</div>
+									</div>
+									<button data-popup="#select-car" type="button" class="item-card__btn button button-green">select</button>
+								</a>
+								<a href="#" class="cards-block__item item-card">
+									<div class="item-card__image-ibg">
+										<img src="img/car-images/01.jpg" alt="image">
+									</div>
+									<div class="item-card__brand"></div>
+									<div class="item-card__specifications">
+										<div class="item-card__specification _icon-car">engine: electric</div>
+										<div class="item-card__specification _icon-horse">power: 643hp</div>
+										<div class="item-card__specification _icon-light">battery cap.: 75kwh</div>
+										<div class="item-card__specification _icon-battary">distance: 500km</div>
+									</div>
+									<div class="item-card__price-block price-block">
+										<div class="price-block__number">40900$ - 47600$</div>
+										<div class="price-block__compare">
+											<img src="img/compare.svg" alt="compare-arrows">
+											compare
+										</div>
+									</div>
+									<button data-popup="#select-car" type="button" class="item-card__btn button button-green">select</button>
+								</a>
+								<a href="#" class="cards-block__item item-card">
+									<div class="item-card__image-ibg">
+										<img src="img/car-images/01.jpg" alt="image">
+									</div>
+									<div class="item-card__brand"></div>
+									<div class="item-card__specifications">
+										<div class="item-card__specification _icon-car">engine: electric</div>
+										<div class="item-card__specification _icon-horse">power: 643hp</div>
+										<div class="item-card__specification _icon-light">battery cap.: 75kwh</div>
+										<div class="item-card__specification _icon-battary">distance: 500km</div>
+									</div>
+									<div class="item-card__price-block price-block">
+										<div class="price-block__number">40900$ - 47600$</div>
+										<div class="price-block__compare">
+											<img src="img/compare.svg" alt="compare-arrows">
+											compare
+										</div>
+									</div>
+									<button data-popup="#select-car" type="button" class="item-card__btn button button-green">select</button>
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрити</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+
+
+		<div id="contact" aria-hidden="true" class="popup popup_contact">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<img src="img/popup-close.svg" alt="">
+					</button>
+					<div class="popup__title">contact us</div>
+					<form action="#" method="POST">
+						<div class="popup__inputs">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Your name" class="input input-green">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Your phone number" class="input input-green">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Or enter your email address" class="input input-green">
+						</div>
+						<button type="submit" class="button-green button">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="select-car" aria-hidden="true" class="popup popup_contact">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<img src="img/popup-close.svg" alt="">
+					</button>
+					<div class="popup__title">arcfox alpha s</div>
+					<div class="popup__image-ibg">
+						<img src="img/car-images/car.jpg" alt="car">
+					</div>
+					<div class="popup__form-label">request information</div>
+					<form action="#" method="POST">
+						<div class="popup__inputs">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Your name" class="input input-green">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Your phone number" class="input input-green">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Or enter your email address" class="input input-green">
+						</div>
+						<button type="submit" class="button-green button">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__rights">CARS OF FUTURE © 2022 ALL RIGHTS RESERVED.</div>
+				<div class="footer__content">
+					<div class="footer__label">
+						Sale of electric cars from China and manufacturers from other countries.
+					</div>
+					<div class="footer__cities">Dubai, Abu Dhabi, UAE.</div>
+					<div class="footer__numbers numbers-footer">
+						<div class="numbers-footer__item">+971 55 481 3073 – voice calls.</div>
+						<div class="numbers-footer__item">+7 (915) 021-47-30 – messengers.</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20231015181615"></script>
+</body>
+
+</html>
