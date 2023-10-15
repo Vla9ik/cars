@@ -5807,6 +5807,25 @@
             },
             on: {}
         });
+        if (document.querySelector(".card-info__slider")) new swiper_core_Swiper(".card-info__slider", {
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            centeredSlides: true,
+            speed: 800,
+            loop: true,
+            pagination: {
+                el: ".card-info__swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                prevEl: ".card-info__swiper-button-prev",
+                nextEl: ".card-info__swiper-button-next"
+            },
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
