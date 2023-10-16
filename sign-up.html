@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Contacts - Cars of Future</title>
+	<title>Sign up</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -20,9 +20,9 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="about-us.html" class="menu__link ">about us</a></li>
+							<li class="menu__item"><a href="about-us.html" class="menu__link active">about us</a></li>
 							<li class="menu__item"><a href="catalog.html" class="menu__link ">catalog</a></li>
-							<li class="menu__item"><a href="contacts.html" class="menu__link active">contacts</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link ">contacts</a></li>
 						</ul>
 						<div class="menu__input-search search-block">
 							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Find your car..." class="menu__input search-block__input input">
@@ -51,30 +51,26 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__contact-us contact-us">
-				<div class="contact-us__container">
-					<div class="contact-us__image image-car">
+			<section class="page__sign-up sign-up">
+				<div class="sign-up__container">
+					<div class="sign-up__image image-car">
 						<img src="img/contacts/car.jpg" alt="car">
-						<h2 class="contact-us__title image-car__title">contact us</h2>
+						<h2 class="sign-up__title image-car__title">Sign up</h2>
 					</div>
-					<div class="contact-us__label">Contacts</div>
-					<div class="contact-us__footer">
-						<div class="contact-us__icon">
-							<img src="img/contacts/icon-contact.svg" alt="icon">
+					<form class="form-sign-up" action="#">
+						<div class="form-sign-up__inputs">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Username" class="form-sign-up__input input input-green">
+							<input autocomplete="off" type="text" name="form[]" placeholder="First Name" class="form-sign-up__input input input-green">
+							<input autocomplete="off" type="text" name="form[]" placeholder="Last Name" class="form-sign-up__input input input-green">
+							<input autocomplete="off" type="email" name="form[]" placeholder="E-mail Address" class="form-sign-up__input input input-green">
+							<input autocomplete="off" type="password" name="form[]" placeholder="Password" class="form-sign-up__input input input-green">
+							<input autocomplete="off" type="password" name="form[]" placeholder="Confirm Password" class="form-sign-up__input input input-green">
 						</div>
-						<div class="contact-us__content">
-							<div class="contact-us__links">
-								<a href="#" class="contact-us__link _icon-whatsapp">+971 55 555 555</a>
-								<a href="https://t.me/Rodion_T" class="contact-us__link _icon-tg">@robingut</a>
-								<a href="tel:+97155555555" class="contact-us__link _icon-call">+971 55 555 555</a>
-								<a href="mailto:support@bringing.site" class="contact-us__link _icon-mail">support@bringing.site</a>
-							</div>
-							<div class="contact-us__work-time">
-								<div class="contact-us__days">mn - st</div>
-								<div class="contact-us__time">09:00 A.M. - 09:00 p.m.</div>
-							</div>
+						<div class="form-sign-up__btns">
+							<button type="submit" class="form-sign-up__button form-sign-up__button_sign-up button button-green">Sign up</button>
+							<a href="login.html" class="form-sign-up__button form-sign-up__button_login button-light">Log in</a>
 						</div>
-					</div>
+					</form>
 				</div>
 			</section>
 		</main>
