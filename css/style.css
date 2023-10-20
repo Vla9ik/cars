@@ -2994,9 +2994,21 @@ body::after {
 }
 
 .order-block__items {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order-block__item {
+  min-width: 360px;
 }
 
 .order-block__brand-name {
@@ -4873,13 +4885,6 @@ body::after {
 @media (max-width: 28.125em) {
   .password-reset__title {
     font-size: 1.125rem;
-  }
-}
-
-@media (max-width: 23.75em) {
-  .order-block__items {
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
   }
 }
 
