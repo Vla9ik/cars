@@ -1827,6 +1827,7 @@ body::after {
   -webkit-column-gap: 0.5rem;
      -moz-column-gap: 0.5rem;
           column-gap: 0.5rem;
+  position: relative;
 }
 
 .circle-block__wrapper:not(:last-child)::after {
@@ -4883,6 +4884,10 @@ body::after {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .circle-block__wrapper {
+    padding-bottom: 1.875rem;
+  }
+
   .circle-block__wrapper:nth-child(1) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -4901,6 +4906,23 @@ body::after {
 
   .circle-block__wrapper:nth-child(2)::after {
     display: none !important;
+  }
+
+  .circle-block__wrapper:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 5px;
+    left: 40%;
+    -webkit-transform: translate(-50%, 0px);
+        -ms-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+    width: 1.75rem;
+    height: 0.5rem;
+    background: url("../img/circle-arrow.svg") 0 0/100% no-repeat;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 
   .circle-block__wrapper:nth-child(3) {
@@ -4927,6 +4949,23 @@ body::after {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
+  }
+
+  .circle-block__wrapper:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 5px;
+    left: 30%;
+    -webkit-transform: translate(-50%, 0px);
+        -ms-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+    width: 1.75rem;
+    height: 0.5rem;
+    background: url("../img/circle-arrow.svg") 0 0/100% no-repeat;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 
   .circle-block__wrapper:nth-child(5) {
@@ -6943,6 +6982,10 @@ body::after {
 }
 
 @media (max-width: 61.99875em) and (min-width: 47.99875em) {
+  .circle-block__wrapper {
+    padding-bottom: 1.875rem;
+  }
+
   .circle-block__wrapper:nth-child(1) {
     -ms-grid-column-align: end;
         justify-self: end;
@@ -6955,6 +6998,23 @@ body::after {
 
   .circle-block__wrapper:nth-child(3)::after {
     display: none !important;
+  }
+
+  .circle-block__wrapper:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: 6px;
+    left: 40%;
+    -webkit-transform: translate(-50%, 0px);
+        -ms-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+    width: 1.75rem;
+    height: 0.5rem;
+    background: url("../img/circle-arrow.svg") 0 0/100% no-repeat;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 
   .circle-block__wrapper:nth-child(4) {
