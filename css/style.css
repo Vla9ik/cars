@@ -6943,17 +6943,6 @@ body::after {
 }
 
 @media (max-width: 61.99875em) and (min-width: 47.99875em) {
-  .circle-block__wrapper::after {
-    content: "";
-    display: inline-block;
-    width: 1.75rem;
-    height: 0.5rem;
-    background: url("../img/circle-arrow.svg") 0 0/100% no-repeat;
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-
   .circle-block__wrapper:nth-child(1) {
     -ms-grid-column-align: end;
         justify-self: end;
@@ -6986,12 +6975,34 @@ body::after {
             order: 5;
   }
 
+  .circle-block__wrapper:nth-child(5)::after {
+    content: "";
+    display: inline-block;
+    width: 1.75rem;
+    height: 0.5rem;
+    background: url("../img/circle-arrow.svg") 0 0/100% no-repeat;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+
   .circle-block__wrapper:nth-child(6) {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
     -ms-grid-column-align: end;
         justify-self: end;
+  }
+
+  .circle-block__wrapper:nth-child(6)::after {
+    content: "";
+    display: inline-block;
+    width: 1.75rem;
+    height: 0.5rem;
+    background: url("../img/circle-arrow.svg") 0 0/100% no-repeat;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 
