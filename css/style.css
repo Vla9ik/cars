@@ -217,6 +217,12 @@ h6 {
           align-items: center;
 }
 
+.popup.popup_contact .button {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 146px;
+}
+
 .button.form-login__button.button-green {
   min-width: 100%;
 }
@@ -636,7 +642,11 @@ textarea.input {
 }
 
 .select_lang .select__options {
+  padding: 0.3125rem;
   top: calc(100% + 0.625rem);
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  border: none;
 }
 
 .select__scroll {
@@ -668,6 +678,25 @@ textarea.input {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.select_lang .select__option {
+  padding: 0px;
+  padding: 0.4375rem;
+  color: #aeaeae;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.select_lang .select__option:not(:last-child) {
+  margin-bottom: 0.3125rem;
 }
 
 .select__option._select-selected {
@@ -1203,6 +1232,50 @@ body::after {
   aspect-ratio: 540/281;
   overflow: hidden;
   border-radius: 0.75rem;
+}
+
+.contacts-popup {
+  margin-top: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+}
+
+.contacts-popup__link {
+  border-radius: 50%;
+}
+
+.contacts-popup__link::before {
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.contacts-popup__link._icon-whatsapp {
+  background-color: #2cb742;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.contacts-popup__link._icon-tg {
+  background-color: #20a0e1;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.contacts-popup__link._icon-call {
+  background-color: #28c863;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 [class*=-ibg] {
@@ -6857,8 +6930,25 @@ body::after {
     background-color: #26b45a;
   }
 
+  .select_lang .select__option:hover {
+    background-color: #28c863;
+    color: #fff;
+  }
+
   .select__option:hover {
     background: #d9d9d9;
+  }
+
+  .contacts-popup__link._icon-whatsapp:hover {
+    background-color: #259a36;
+  }
+
+  .contacts-popup__link._icon-tg:hover {
+    background-color: #1b81b4;
+  }
+
+  .contacts-popup__link._icon-call:hover {
+    background-color: #24ab55;
   }
 
   .contacts__link:hover::before {
