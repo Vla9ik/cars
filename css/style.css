@@ -605,6 +605,7 @@ textarea.input {
 
 .select.select_lang._select-active._select-open .select__content {
   color: #fff;
+  font-size: 12px;
 }
 
 .select_sort-car .select__content {
