@@ -471,6 +471,10 @@ textarea.input {
   cursor: pointer;
 }
 
+.select.select_lang._select-active._select-open .select__title {
+  border-radius: 20px 20px 0 0;
+}
+
 .select_brand .select__title {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -491,6 +495,9 @@ textarea.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2.625rem;
+          flex: 0 0 2.625rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -510,6 +517,13 @@ textarea.input {
   height: 1.875rem;
   padding: 0 0.9375rem;
   gap: 0.625rem;
+}
+
+.select.select_lang._select-active._select-open .select__value {
+  background-color: #28c863;
+  padding: 0.3125rem;
+  border-radius: 50%;
+  width: 1.8125rem;
 }
 
 .select_brand .select__value {
@@ -589,6 +603,10 @@ textarea.input {
   white-space: nowrap;
 }
 
+.select.select_lang._select-active._select-open .select__content {
+  color: #fff;
+}
+
 .select_sort-car .select__content {
   color: #333;
   font-size: 14px;
@@ -641,10 +659,13 @@ textarea.input {
   padding: 5px 0px 5px 0px;
 }
 
+.select.select_lang._select-active._select-open .select__options {
+  border-radius: 0 0 20px 20px;
+}
+
 .select_lang .select__options {
   padding: 0.3125rem;
-  top: calc(100% + 0.625rem);
-  border-radius: 20px;
+  top: 100%;
   background-color: #f4f4f4;
   border: none;
 }
@@ -4624,11 +4645,6 @@ body::after {
 @media (max-width: 61.99875em) {
   [class*=__out-of-container] {
     padding-right: 0.9375rem;
-  }
-
-  .select_lang .select__title {
-    width: 1.875rem;
-    height: 1.875rem;
   }
 
   .select_lang .select__content {
