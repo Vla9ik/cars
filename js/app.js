@@ -5765,48 +5765,53 @@
         });
     }
     function initSliders() {
-        if (document.querySelector(".reviews__slider")) new swiper_core_Swiper(".reviews__slider", {
-            modules: [ Navigation, Pagination, EffectCoverflow ],
-            observer: true,
-            observeParents: true,
-            slidesPerView: 3,
-            spaceBetween: 0,
-            grabCursor: true,
-            centeredSlides: true,
-            speed: 800,
-            effect: "coverflow",
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 0,
-                modifier: 3,
-                slideShadows: true,
-                scale: .95
-            },
-            loop: true,
-            pagination: {
-                el: ".reviews__swiper-pagination",
-                clickable: true
-            },
-            navigation: {
-                prevEl: ".reviews__swiper-button-prev",
-                nextEl: ".reviews__swiper-button-next"
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
+        if (document.querySelector(".reviews__slider")) {
+            let sliderElement = document.querySelector(".reviews__slider");
+            let slides = sliderElement.querySelectorAll(".reviews__slide").length;
+            new swiper_core_Swiper(".reviews__slider", {
+                modules: [ Navigation, Pagination, EffectCoverflow ],
+                observer: true,
+                observeParents: true,
+                loop: slides > 4 ? true : false,
+                initialSlide: slides > 4 ? 0 : 1,
+                slidesPerView: 3,
+                spaceBetween: 0,
+                grabCursor: true,
+                centeredSlides: true,
+                speed: 800,
+                effect: "coverflow",
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 0,
+                    modifier: 3,
+                    slideShadows: true,
+                    scale: .95
                 },
-                690: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
+                pagination: {
+                    el: ".reviews__swiper-pagination",
+                    clickable: true
                 },
-                992: {
-                    slidesPerView: 3
-                }
-            },
-            on: {}
-        });
+                navigation: {
+                    prevEl: ".reviews__swiper-button-prev",
+                    nextEl: ".reviews__swiper-button-next"
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    },
+                    690: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    992: {
+                        spaceBetween: 0
+                    }
+                },
+                on: {}
+            });
+        }
         if (document.querySelector(".card-info__slider")) new swiper_core_Swiper(".card-info__slider", {
             modules: [ Navigation, Pagination ],
             observer: true,
