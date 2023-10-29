@@ -2904,13 +2904,26 @@ body::after {
 
 .card-info__swiper-button-next,
 .card-info__swiper-button-prev {
+  width: 1.875rem;
+  height: 2.1875rem;
+  background-color: rgba(90, 85, 85, 0.499);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 50%;
 }
 
 .card-info__swiper-button-next::before,
 .card-info__swiper-button-prev::before {
-  color: #6c6666;
+  color: #ffffff;
+  font-size: 0.75rem;
 }
 
 .breadcrumbs {
@@ -3399,7 +3412,7 @@ body::after {
 
   .card-info__swiper-button-next,
   .card-info__swiper-button-prev {
-    top: 33%;
+    top: 30%;
   }
 }
 
