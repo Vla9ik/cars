@@ -2827,6 +2827,10 @@ body::after {
   margin-bottom: 1.3125rem;
 }
 
+.card-info__slider {
+  position: relative;
+}
+
 .card-info__description {
   color: #333;
   font-weight: 500;
@@ -2876,6 +2880,37 @@ body::after {
 .card-info__swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 3.75rem;
   background-color: #81e07c;
+}
+
+.card-info__swiper-button-next {
+  right: 0;
+}
+
+.card-info__swiper-button-next::before {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.card-info__swiper-button-prev {
+  left: 0;
+}
+
+.card-info__swiper-button-prev::before {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.card-info__swiper-button-next,
+.card-info__swiper-button-prev {
+  position: absolute;
+  top: 50%;
+}
+
+.card-info__swiper-button-next::before,
+.card-info__swiper-button-prev::before {
+  color: #6c6666;
 }
 
 .breadcrumbs {
@@ -3360,6 +3395,11 @@ body::after {
     -webkit-transform: translate(0px, -160px);
         -ms-transform: translate(0px, -160px);
             transform: translate(0px, -160px);
+  }
+
+  .card-info__swiper-button-next,
+  .card-info__swiper-button-prev {
+    top: 33%;
   }
 }
 
