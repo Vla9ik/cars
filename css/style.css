@@ -2906,7 +2906,9 @@ body::after {
 .card-info__swiper-button-prev {
   width: 1.875rem;
   height: 2.1875rem;
-  background-color: rgba(90, 85, 85, 0.499);
+  background-color: rgba(97, 92, 92, 0.499);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2917,7 +2919,7 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 50%;
+  top: 45%;
 }
 
 .card-info__swiper-button-next::before,
@@ -4876,6 +4878,10 @@ body::after {
 
   .card-info__body:not(:last-child) {
     margin-bottom: 2.5rem;
+  }
+
+  .card-info__swiper-pagination {
+    min-height: 1.875rem;
   }
 }
 
@@ -7194,5 +7200,10 @@ body::after {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05);
+  }
+
+  .card-info__swiper-button-next:hover,
+  .card-info__swiper-button-prev:hover {
+    background-color: rgba(63, 56, 56, 0.499);
   }
 }
