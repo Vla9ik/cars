@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231029193429">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231031213108">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -143,6 +143,91 @@
 				</div>
 			</div>
 		</div>
+
+
+
+		<div id="download" aria-hidden="true" class="popup popup_download">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<img src="img/popup-close.svg" alt="">
+					</button>
+					<div class="popup__title">attachments</div>
+					<div data-tabs class="popup__tabs download">
+						<nav data-tabs-titles class="download__navigation">
+							<button type="button" class="download__title _tab-active  _icon-photo">photo</button>
+							<button type="button" class="download__title _icon-video">video</button>
+							<button type="button" class="download__title _icon-file">file</button>
+						</nav>
+						<div data-tabs-body class="download__content">
+							<div class="download__body download-photo">
+								<div class="download-photo__image-ibg">
+									<img src="img/download-content/car.jpg" alt="car">
+									<a download="car" href="img/download-content/car.jpg" class="download-btn _icon-save"></a>
+								</div>
+								<div class="download-photo__image-ibg">
+									<img src="img/download-content/car.jpg" alt="car">
+									<a download="car" href="img/download-content/car.jpg" class="download-btn _icon-save"></a>
+								</div>
+								<div class="download-photo__image-ibg">
+									<img src="img/download-content/car.jpg" alt="car">
+									<a download="car" href="img/download-content/car.jpg" class="download-btn _icon-save"></a>
+								</div>
+							</div>
+							<div class="download__body download-video">
+								<div class="download-video__video video">
+									<div class="video__overlay js-video-btn">
+										<button type="button" class="play">
+											<img src="img/play.svg" alt="play">
+										</button>
+									</div>
+									<video muted class="js-video">
+										<source src="img/video.mp4" type="video/mp4" />
+									</video>
+									<a download="car" href="img/video.mp4" class="download-btn _icon-save"></a>
+								</div>
+								<div class="download-video__video video">
+									<div class="video__overlay js-video-btn">
+										<button type="button" class="play">
+											<img src="img/play.svg" alt="play">
+										</button>
+									</div>
+									<video muted class="js-video">
+										<source src="img/video.mp4" type="video/mp4" />
+									</video>
+									<a download="car" href="img/video.mp4" class="download-btn _icon-save"></a>
+								</div>
+								<div class="download-video__video video">
+									<div class="video__overlay js-video-btn">
+										<button type="button" class="play">
+											<img src="img/play.svg" alt="play">
+										</button>
+									</div>
+									<video muted class="js-video">
+										<source src="img/video.mp4" type="video/mp4" />
+									</video>
+									<a download="car" href="img/video.mp4" class="download-btn _icon-save"></a>
+								</div>
+							</div>
+							<div class="download__body download-file">
+								<div class="download-file__item">
+									<div class="download-file__text">File number one or №1.pdf</div>
+									<a download="car" href="#" class="download-btn _icon-save"></a>
+								</div>
+								<div class="download-file__item">
+									<div class="download-file__text">File number one or №2.pdf</div>
+									<a download="car" href="#" class="download-btn _icon-save"></a>
+								</div>
+								<div class="download-file__item">
+									<div class="download-file__text">File number one or №3 Long name file very long.pdf</div>
+									<a download="car" href="#" class="download-btn _icon-save"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__rights">CARS OF FUTURE © 2022 ALL RIGHTS RESERVED.</div>
@@ -159,7 +244,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231029193429"></script>
+	<script src="js/app.min.js?_v=20231031213108"></script>
 </body>
 
 </html>
